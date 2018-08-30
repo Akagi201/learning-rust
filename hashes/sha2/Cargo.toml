@@ -1,0 +1,7 @@
+[package]
+name = "sha2"
+version = "0.1.0"
+authors = ["Akagi201 <akagi201@gmail.com>"]
+
+[dependencies]
+sha2 = "0.7.1"
