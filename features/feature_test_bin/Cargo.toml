@@ -1,0 +1,11 @@
+[package]
+name = "feature_test_bin"
+version = "0.1.0"
+authors = ["Akagi201 <akagi201@gmail.com>"]
+
+[dependencies]
+
+[dependencies.feature_test]
+path = "../feature_test"
+default-features = false
+features = ["b"]

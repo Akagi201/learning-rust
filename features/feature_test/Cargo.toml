@@ -1,0 +1,13 @@
+[package]
+name = "feature_test"
+version = "0.1.0"
+authors = ["Akagi201 <akagi201@gmail.com>"]
+
+[dependencies]
+foo = { path = "../foo", optional = true }
+bar = { path = "../bar", optional = true }
+
+[features]
+default = []
+a = ["bar"]
+b = ["foo"]
