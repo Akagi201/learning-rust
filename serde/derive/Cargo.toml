@@ -1,0 +1,9 @@
+[package]
+name = "derive"
+version = "0.1.0"
+authors = ["Akagi201 <akagi201@gmail.com>"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
