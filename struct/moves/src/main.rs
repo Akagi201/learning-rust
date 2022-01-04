@@ -20,7 +20,7 @@ impl A {
 }
 
 fn main() {
-    let ast = A{
+    let mut ast = A{
         a: 12i32,
     };
     ast.show();

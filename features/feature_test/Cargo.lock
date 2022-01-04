@@ -3,17 +3,15 @@
 version = 3
 
 [[package]]
+name = "bar"
+version = "0.1.0"
+
+[[package]]
 name = "feature_test"
 version = "0.1.0"
 dependencies = [
+ "bar",
  "foo",
-]
-
-[[package]]
-name = "feature_test_bin"
-version = "0.1.0"
-dependencies = [
- "feature_test",
 ]
 
 [[package]]

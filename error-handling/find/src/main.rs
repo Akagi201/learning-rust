@@ -2,7 +2,7 @@ use std::path::Path;
 
 fn file_name(file_path: &str) -> Option<&str> {
     let path = Path::new(file_path);
-    path.file_name().to_str()
+    path.file_name().unwrap().to_str()
 }
 
 fn file_path_ext(file_path: &str) -> Option<&str> {

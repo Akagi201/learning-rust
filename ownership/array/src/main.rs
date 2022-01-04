@@ -24,5 +24,34 @@ fn main() {
         // println!("arr: {:?}", arr);
     }
 
+    {
+        let mut arr = Box::new([1,2,3,4]);
+        arr = print_arr(arr);
+        println!("arr: {:?}", arr);
+    }
 
-} 
+    {
+        let arr = Box::new([1,2,3,4]);
+        print_arr1(&arr);
+        println!("arr: {:?}", arr);
+    }
+
+    {
+        let arr = Box::new([1,2,3,4]);
+        print_arr2(&arr);
+        println!("arr: {:?}", arr);
+    }
+}
+
+fn print_arr(arr: Box<[i32;4]>) -> Box<[i32;4]> {
+    println!("arr: {:?}", arr);
+    arr
+}
+
+fn print_arr1(arr: &Box<[i32;4]>) {
+    println!("arr: {:?}", arr);
+}
+
+fn print_arr2(arr: &[i32;4]) {
+    println!("arr: {:?}", arr);
+}

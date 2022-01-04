@@ -3,13 +3,6 @@
 version = 3
 
 [[package]]
-name = "hello-world"
-version = "0.1.0"
-dependencies = [
- "hello-world-derive",
-]
-
-[[package]]
 name = "hello-world-derive"
 version = "0.1.0"
 dependencies = [
