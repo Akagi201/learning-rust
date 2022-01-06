@@ -55,8 +55,11 @@ members = [
     "struct/moves",
     "thread/join",
     "tokio/echo",
+    "tokio/tracing",
     "trait/animal-interface",
     "typenum/hello",
     "unsafe/pointer",
     "variables",
+    "defer/scopeguard-defer",
+    "error-handling/err-snafu",
 ]
