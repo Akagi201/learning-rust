@@ -1,5 +1,5 @@
 // 输出文本
-static LOREM_IPSUM: &'static str =
+static LOREM_IPSUM: &str =
 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -8,7 +8,6 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ";
 
-use std::error::Error;
 use std::io::prelude::*;
 use std::fs::File;
 use std::path::Path;
@@ -21,15 +20,15 @@ fn main() {
     let mut file = match File::create(&path) {
         Err(why) => panic!("couldn't create {}: {}",
                            display,
-                           Error::description(&why)),
+                           &why),
         Ok(file) => file,
     };
 
-    // 写入 `LOREM_IPSUM` 字符串到文件中, 并返回 `io::Result<()>` 类型
+    // 写入 `LOREM_IPSUM` 字符串到文件中，并返回 `io::Result<()>` 类型
     match file.write_all(LOREM_IPSUM.as_bytes()) {
         Err(why) => {
             panic!("couldn't write to {}: {}", display,
-                                               Error::description(&why))
+                                               &why)
         },
         Ok(_) => println!("successfully wrote to {}", display),
     }

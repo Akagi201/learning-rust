@@ -62,4 +62,10 @@ members = [
     "variables",
     "defer/scopeguard-defer",
     "error-handling/err-snafu",
+    "lifetime/func-ret",
+    "opentelemetry/myopentelemetry-otlp",
+    "json/lite-json",
+    "overflow/overflow-std",
+    "print/println",
+    "convert/typeas",
 ]

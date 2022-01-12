@@ -1,3 +1,4 @@
+#[allow(unreachable_code)]
 fn main() {
     println!("hello");
     diverging();

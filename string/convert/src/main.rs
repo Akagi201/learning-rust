@@ -13,11 +13,11 @@ fn main() {
     let s = "Hello".to_string();
     use_str(&*s);
 
-    // UTF-8编码的字节数组转换成String
-    // 存储在Vec里的一些字节
+    // UTF-8 编码的字节数组转换成 String
+    // 存储在 Vec 里的一些字节
     let miao = vec![229, 150, 181];
 
-    // 我们知道这些字节是合法的UTF-8编码字符串，所以直接unwrap()
+    // 我们知道这些字节是合法的 UTF-8 编码字符串，所以直接 unwrap()
     let meow = String::from_utf8(miao).unwrap();
 
     assert_eq!("喵", meow);
@@ -29,7 +29,7 @@ fn main() {
         print!("{} ", i);
     }
 
-    println!("");
+    println!();
 
     for i in x.chars() {
         print!("{}", i);

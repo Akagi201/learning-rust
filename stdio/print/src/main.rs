@@ -6,5 +6,5 @@ fn main() {
     io::stdin()
         .read_line(&mut input)
         .expect("读取失败");
-    print!("您输入的字符串是: {}\n", input);
+    println!("您输入的字符串是: {}", input);
 }

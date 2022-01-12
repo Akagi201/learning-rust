@@ -25,6 +25,7 @@ fn test5<T>(mut f: T) where T: FnMut() {
     f();
 }
 
+#[allow(dead_code)]
 fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
     Box::new(|x| x + 1)
 }

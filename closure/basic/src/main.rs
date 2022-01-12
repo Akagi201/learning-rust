@@ -1,3 +1,4 @@
+#[allow(unused)]
 fn main() {
     {
         // case 1

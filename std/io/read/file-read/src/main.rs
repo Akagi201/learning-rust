@@ -9,7 +9,7 @@ fn main() -> io::Result<()> {
         let mut buffer = [0; 10];
 
         // read up to 10 bytes;
-        f.read(&mut buffer)?;
+        f.read_exact(&mut buffer)?;
         println!("{:?}", buffer);
 
         let mut buffer = vec![0; 10];
@@ -29,7 +29,7 @@ fn main() -> io::Result<()> {
         let mut buffer = [0; 10];
 
         // read up to 10 bytes
-        b.read(&mut buffer)?;
+        b.read_exact(&mut buffer)?;
         println!("{:?}", buffer);
     }
 
@@ -70,7 +70,7 @@ fn main() -> io::Result<()> {
         // read at most five bytes
         let mut handle = f.take(5);
 
-        handle.read(&mut buffer)?;
+        handle.read_exact(&mut buffer)?;
     }
 
     // and more! See the other methods for more details.

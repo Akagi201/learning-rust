@@ -30,6 +30,7 @@ fn main() {
 
     {
         let mut list97 = [0; 97];
+        #[allow(clippy::needless_range_loop)]
         for i in 0..97 {
             list97[i] = i as i32;
         }

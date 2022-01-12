@@ -6,11 +6,11 @@ extern crate foo;
 #[cfg(feature = "a")]
 pub fn run() {
     // do something with crate bar
-    println!("执行 {}", "a");
+    println!("执行 a");
 }
 
 #[cfg(feature = "b")]
 pub fn run() {
     // do something with crate foo
-    println!("执行 {}", "b");
+    println!("执行 b");
 }

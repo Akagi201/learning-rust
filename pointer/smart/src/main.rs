@@ -2,6 +2,7 @@
 use std::ops::Deref;
 
 // & -> Box -> MyBox -> String/Vec Rc -> Arc -> ReCell
+#[allow(unused_variables)]
 fn main() {
     let a= 10;
     let ra = &a;

@@ -48,7 +48,7 @@ fn print_arr(arr: Box<[i32;4]>) -> Box<[i32;4]> {
     arr
 }
 
-fn print_arr1(arr: &Box<[i32;4]>) {
+fn print_arr1(arr: &[i32;4]) {
     println!("arr: {:?}", arr);
 }
 

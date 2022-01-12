@@ -1,10 +1,12 @@
 use std::path::Path;
 
+#[allow(dead_code)]
 fn file_name(file_path: &str) -> Option<&str> {
     let path = Path::new(file_path);
     path.file_name().unwrap().to_str()
 }
 
+#[allow(dead_code)]
 fn file_path_ext(file_path: &str) -> Option<&str> {
     file_name(file_path).and_then(extension)
 }

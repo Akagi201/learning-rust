@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 enum SpecialPoint {
     Point(i32, i32),
     Special(String),

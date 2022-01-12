@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn foo<'a>(x: &'a str, y: &'a str) -> &'a str {
     if true {
         x

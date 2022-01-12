@@ -1,5 +1,6 @@
 use std::env;
 
+#[allow(clippy::or_fun_call)]
 fn double_arg(mut argv: env::Args) -> Result<i32, String> {
     argv.nth(1)
     .ok_or("Please give at least one argument".to_owned())

@@ -24,7 +24,7 @@ struct Dog {
 impl Animal for Cat {
     // Self is the implementor type: Cat.
     fn new(name: &'static str) -> Self {
-        Cat { name: name, age: 1 }
+        Cat { name, age: 1 }
     }
 
     fn name(&self) -> &'static str {
@@ -44,7 +44,7 @@ impl Animal for Cat {
 
 impl Animal for Dog {
     fn new(name: &'static str) -> Self {
-        Dog { name: name }
+        Dog { name }
     }
 
     fn name(&self) -> &'static str {

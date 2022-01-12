@@ -1,3 +1,5 @@
+#[allow(unused_variables)]
+#[allow(unused_mut)]
 fn main() {
     {
         // let a = [3;5];
