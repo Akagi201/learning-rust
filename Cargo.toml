@@ -68,4 +68,6 @@ members = [
     "overflow/overflow-std",
     "print/println",
     "convert/typeas",
+    "generics/typeimpl",
+    "error-handling/errwrap",
 ]

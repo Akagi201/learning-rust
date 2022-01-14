@@ -385,6 +385,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "errwrap"
+version = "0.1.0"
+
+[[package]]
 name = "fake-simd"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2260,6 +2264,10 @@ checksum = "59547bce71d9c38b83d9c0e92b6066c4253371f15005def0c30d9657f50c7642"
 
 [[package]]
 name = "typeas"
+version = "0.1.0"
+
+[[package]]
+name = "typeimpl"
 version = "0.1.0"
 
 [[package]]
