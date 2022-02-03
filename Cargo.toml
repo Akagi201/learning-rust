@@ -57,7 +57,6 @@ members = [
     "tokio/echo",
     "tokio/tracing",
     "trait/animal-interface",
-    "typenum/hello",
     "unsafe/pointer",
     "variables",
     "defer/scopeguard-defer",
@@ -70,4 +69,6 @@ members = [
     "convert/typeas",
     "generics/typeimpl",
     "error-handling/errwrap",
+    "type/typenums",
+    "type/typesize",
 ]

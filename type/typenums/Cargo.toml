@@ -1,7 +1,8 @@
 [package]
-name = "typenum_hello"
+name = "typenums"
 version = "0.1.0"
 authors = ["Akagi201 <akagi201@gmail.com>"]
+edition = '2021'
 
 [dependencies]
 typenum = "1.10.0"

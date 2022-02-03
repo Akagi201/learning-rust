@@ -1,5 +1,3 @@
-extern crate typenum;
-
 use typenum::{Sum, Exp, Integer, N2, P3, P4};
 
 fn main() {
