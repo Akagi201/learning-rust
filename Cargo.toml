@@ -71,4 +71,6 @@ members = [
     "error-handling/errwrap",
     "type/typenums",
     "type/typesize",
+    "reqwest/syncexample",
+    "reqwest/asyncexample",
 ]

@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-path = "src/local_collector.rs"
-name = "local_collector"
+path = "src/simple.rs"
+name = "tracing_simple"
 
 [dependencies.tracing]
 git = "https://github.com/tokio-rs/tracing.git"
