@@ -73,4 +73,5 @@ members = [
     "type/typesize",
     "reqwest/syncexample",
     "reqwest/asyncexample",
+    "tokio/example",
 ]

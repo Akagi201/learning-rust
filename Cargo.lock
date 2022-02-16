@@ -447,6 +447,13 @@ name = "errwrap"
 version = "0.1.0"
 
 [[package]]
+name = "example"
+version = "0.1.0"
+dependencies = [
+ "tokio 1.16.1",
+]
+
+[[package]]
 name = "fake-simd"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
