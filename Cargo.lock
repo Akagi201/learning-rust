@@ -277,10 +277,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "convert"
-version = "0.1.0"
-
-[[package]]
 name = "core-foundation"
 version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2019,6 +2015,10 @@ dependencies = [
  "libc",
  "winapi 0.3.9",
 ]
+
+[[package]]
+name = "string-convert"
+version = "0.1.0"
 
 [[package]]
 name = "strsim"

@@ -1,6 +1,15 @@
 [package]
-name = "convert"
+name = "string-convert"
 version = "0.1.0"
 authors = ["Akagi201 <akagi201@gmail.com>"]
+edition = "2021"
+
+[[bin]]
+name = "string-simple"
+path = "src/main.rs"
+
+[[bin]]
+name = "string-conversation"
+path = "src/convert.rs"
 
 [dependencies]
