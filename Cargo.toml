@@ -74,4 +74,6 @@ members = [
     "reqwest/syncexample",
     "reqwest/asyncexample",
     "tokio/example",
+    "grpc/prost_message",
+    "grpc/prost-live",
 ]
