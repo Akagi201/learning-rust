@@ -76,4 +76,5 @@ members = [
     "tokio/example",
     "grpc/prost_message",
     "grpc/prost-live",
+    "grpc/tonic-live",
 ]
