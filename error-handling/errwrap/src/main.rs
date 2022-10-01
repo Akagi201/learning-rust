@@ -20,4 +20,4 @@ fn do_read_file() -> Result<(), Error> {
 fn main() -> Result<(), Error> {
     do_read_file()?;
     Ok(())
-} 
+}

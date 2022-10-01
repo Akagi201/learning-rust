@@ -1,5 +1,5 @@
-use std::collections::HashMap;
 use serde::{Deserialize, Serialize};
+use std::collections::HashMap;
 
 #[derive(Debug, Serialize, Deserialize)]
 struct Post {
@@ -10,14 +10,13 @@ struct Post {
     user_id: i32,
 }
 
-
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     if false {
         let resp = reqwest::get("https://httpbin.org/ip")
-        .await?
-        .json::<HashMap<String, String>>()
-        .await?;
+            .await?
+            .json::<HashMap<String, String>>()
+            .await?;
         println!("{:#?}", resp);
     }
 
@@ -56,12 +55,12 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             user_id: 1,
         };
         let new_post: Post = reqwest::Client::new()
-        .post("https://jsonplaceholder.typicode.com/posts")
-        .json(&new_post)
-        .send()
-        .await?
-        .json()
-        .await?;
+            .post("https://jsonplaceholder.typicode.com/posts")
+            .json(&new_post)
+            .send()
+            .await?
+            .json()
+            .await?;
 
         println!("{:#?}", new_post);
     }
@@ -69,18 +68,18 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     {
         // dynamic json
         let echo_json: serde_json::Value = reqwest::Client::new()
-        .post("https://jsonplaceholder.typicode.com/posts")
-        .json(&serde_json::json!({
-            "title": "Reqwest.rs",
-            "body": "https://docs.rs/reqwest",
-            "userId": 1
-        }))
-        .send()
-        .await?
-        .json()
-        .await?;
+            .post("https://jsonplaceholder.typicode.com/posts")
+            .json(&serde_json::json!({
+                "title": "Reqwest.rs",
+                "body": "https://docs.rs/reqwest",
+                "userId": 1
+            }))
+            .send()
+            .await?
+            .json()
+            .await?;
 
-    println!("{:#?}", echo_json);
+        println!("{:#?}", echo_json);
     }
 
     Ok(())

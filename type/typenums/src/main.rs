@@ -1,4 +1,4 @@
-use typenum::{Sum, Exp, Integer, N2, P3, P4};
+use typenum::{Exp, Integer, Sum, N2, P3, P4};
 
 fn main() {
     type X = Sum<P3, P4>;

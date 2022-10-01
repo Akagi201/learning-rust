@@ -29,10 +29,10 @@ fn main() {
     // Local collector
     {
         let collector = tracing_subscriber::fmt()
-        .with_max_level(Level::TRACE)
-        .finish();
+            .with_max_level(Level::TRACE)
+            .finish();
 
-        tracing::collect::with_default(collector, ||{
+        tracing::collect::with_default(collector, || {
             tracing::info!("This will be logged to stdout");
         });
 

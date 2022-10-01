@@ -23,7 +23,7 @@ fn min<'a>(x: &'a i32, y: &'a i32) -> &'a i32 {
 #[allow(clippy::extra_unused_lifetimes)]
 fn f<'a>() {} // late bound
 #[allow(clippy::extra_unused_lifetimes)]
-fn g<'a:'a>() {} // early bound
+fn g<'a: 'a>() {} // early bound
 
 fn main() {
     if false {
@@ -47,5 +47,4 @@ fn main() {
     let pf = f as fn();
     let pg = g::<'static> as fn();
     assert_eq!(pf, pg);
-
 }

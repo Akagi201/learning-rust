@@ -1,4 +1,3 @@
-
 use std::ops::Deref;
 use std::rc::Rc;
 
@@ -21,7 +20,7 @@ enum List1 {
 // & -> Box -> MyBox -> String/Vec Rc -> Arc -> ReCell
 #[allow(unused_variables)]
 fn main() {
-    let a= 10;
+    let a = 10;
     let ra = &a;
     let av = *ra;
 
@@ -31,13 +30,15 @@ fn main() {
     let c = MyBox::new(30);
     let cv = *c;
 
-    let list = List::Cons(0, Box::new(List::Cons(1, Box::new(List::Cons(2, Box::new(List::Nil))))));
+    let list = List::Cons(
+        0,
+        Box::new(List::Cons(1, Box::new(List::Cons(2, Box::new(List::Nil))))),
+    );
 
     let four = Rc::new(List1::Cons(4, Rc::new(List1::Nil)));
     // let zero_one = List1::Cons(0, Rc::new(List1::Cons(1, four.clone())));
     let zero_one = List1::Cons(0, Rc::new(List1::Cons(1, Rc::clone(&four))));
     let two_three = List1::Cons(2, Rc::new(List1::Cons(3, four)));
-
 }
 
 struct MyBox<T>(T);

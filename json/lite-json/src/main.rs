@@ -1,7 +1,7 @@
 use lite_json::json::{JsonValue, NumberValue};
-use lite_json::Serialize;
 use lite_json::json_parser::parse_json;
 use lite_json::json_parser::parse_json_with_options;
+use lite_json::Serialize;
 use lite_parser::parser::ParserOptions;
 
 fn main() {

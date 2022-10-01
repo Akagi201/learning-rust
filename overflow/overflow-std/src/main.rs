@@ -5,5 +5,5 @@ fn main() {
     // println!("sum={}", a + b);
 
     let (r, is_overflow) = a.overflowing_add(b);
-    println!("r={}, is_overflow={}",r, is_overflow);
+    println!("r={}, is_overflow={}", r, is_overflow);
 }

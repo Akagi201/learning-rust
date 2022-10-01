@@ -20,7 +20,6 @@ impl std::error::Error for CustomError {
     }
 }
 
-
 ///子类型 Error，实现 std::fmt::Debug 的 trait
 #[derive(Debug)]
 struct ChildError;

@@ -12,7 +12,7 @@ impl Add for A {
 
 impl Sub for A {
     type Output = A;
-    fn sub(self, rhs: A) -> A{
+    fn sub(self, rhs: A) -> A {
         A(self.0 - rhs.0)
     }
 }

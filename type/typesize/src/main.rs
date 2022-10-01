@@ -7,7 +7,7 @@ struct Foo; // 单元结构体
 #[allow(dead_code)]
 struct Bar {
     foo: Foo,
-    qux: (), // 单元类型
+    qux: (),      // 单元类型
     baz: [u8; 0], // 空数组
 }
 
@@ -25,8 +25,8 @@ trait B {
     }
 }
 
-impl A for S{}
-impl B for S{}
+impl A for S {}
+impl B for S {}
 
 fn main() {
     // Rust 中大部分类型都可以在编译期确定大小

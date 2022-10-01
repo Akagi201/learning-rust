@@ -5,7 +5,7 @@ fn foo(x: i32) -> i32 {
 macro_rules! foo {
     ($x:ident) => {
         println!("{:?}", $x);
-    }
+    };
 }
 
 fn main() {

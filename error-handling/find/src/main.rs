@@ -23,7 +23,7 @@ fn find(haystack: &str, needle: char) -> Option<usize> {
 fn extension_explicit(file_name: &str) -> Option<&str> {
     match find(file_name, '.') {
         None => None,
-        Some(i) => Some(&file_name[i+1..]),
+        Some(i) => Some(&file_name[i + 1..]),
     }
 }
 
@@ -37,14 +37,14 @@ fn extension_explicit(file_name: &str) -> Option<&str> {
 
 // 使用 map 去掉 match
 fn extension(file_name: &str) -> Option<&str> {
-    find(file_name, '.').map(|i| &file_name[i+1..])
+    find(file_name, '.').map(|i| &file_name[i + 1..])
 }
 
 fn main() {
     let file_name = "foobar.rs";
     match find(file_name, '.') {
         None => println!("No file extension found."),
-        Some(i) => println!("File extension: {}", &file_name[i+1..]),
+        Some(i) => println!("File extension: {}", &file_name[i + 1..]),
     }
 
     match extension_explicit("foo.rs") {

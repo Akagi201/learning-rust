@@ -14,6 +14,6 @@ fn main() {
             let mut some_closure = |c: char| x.push(c);
             some_closure('d');
         }
-        println!("x={:?}", x);  //成功打印：x="abcd"
+        println!("x={:?}", x); //成功打印：x="abcd"
     }
 }

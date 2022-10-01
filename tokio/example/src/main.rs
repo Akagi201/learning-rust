@@ -1,7 +1,7 @@
-use tokio::task;
-use tokio::task::yield_now;
 use std::rc::Rc;
 use tokio::sync::mpsc;
+use tokio::task;
+use tokio::task::yield_now;
 
 async fn say_world() {
     println!("world");
@@ -22,9 +22,7 @@ async fn main() {
     }
 
     if false {
-        let handle = tokio::spawn(async {
-            "return value"
-        });
+        let handle = tokio::spawn(async { "return value" });
 
         // do something
 
@@ -37,7 +35,9 @@ async fn main() {
 
         task::spawn(async move {
             println!("Here's a vec: {:?}", v);
-        }).await.unwrap();
+        })
+        .await
+        .unwrap();
     }
 
     if false {
@@ -51,7 +51,9 @@ async fn main() {
             // `rc` is no longer used. It is **not** persisted when
             // the task yields to the scheduler
             yield_now().await;
-        }).await.unwrap();
+        })
+        .await
+        .unwrap();
     }
 
     // {

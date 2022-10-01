@@ -39,11 +39,13 @@ fn main() {
             "-c, --config=[FILE] 'Sets a custom config file'
                                          <output> 'Sets an optional output file'
                                          -d... 'Turn debugging information on'",
-        ).subcommand(
+        )
+        .subcommand(
             SubCommand::with_name("test")
                 .about("does testing things")
                 .arg_from_usage("-l, --list 'lists test values'"),
-        ).get_matches();
+        )
+        .get_matches();
 
     // You can check the value provided by positional arguments, or option arguments
     if let Some(o) = matches.value_of("output") {

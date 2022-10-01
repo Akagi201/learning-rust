@@ -1,26 +1,44 @@
-fn test<T>(f: T) where T:Fn() {
+fn test<T>(f: T)
+where
+    T: Fn(),
+{
     f();
 }
 
-fn test1<T>(f: T, x: i32) where T:Fn(i32) {
+fn test1<T>(f: T, x: i32)
+where
+    T: Fn(i32),
+{
     f(x);
 }
 
-fn test2<T>(mut f: T) where T:FnMut() {
+fn test2<T>(mut f: T)
+where
+    T: FnMut(),
+{
     f();
 }
 
-fn test3<T>(f: T) where T:FnOnce() {
+fn test3<T>(f: T)
+where
+    T: FnOnce(),
+{
     f();
     // f();
 }
 
-fn test4<T>(f: T) where T:Fn() {
+fn test4<T>(f: T)
+where
+    T: Fn(),
+{
     f();
     f();
 }
 
-fn test5<T>(mut f: T) where T: FnMut() {
+fn test5<T>(mut f: T)
+where
+    T: FnMut(),
+{
     f(); // 我需要 FnMut 但是你可以不改
     f();
 }
@@ -31,7 +49,7 @@ fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
 }
 
 fn returns_closure1() -> impl Fn(i32) -> i32 {
-    |x| x + 1 
+    |x| x + 1
 }
 
 fn returns_closure2() -> impl FnOnce() {
@@ -48,7 +66,7 @@ fn main() {
     test(f);
 
     let s1 = String::from("hello");
-    let f1 = |x:i32| {
+    let f1 = |x: i32| {
         println!("{}, {}", s1, x);
     };
     test1(f1, 1);

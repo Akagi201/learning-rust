@@ -9,8 +9,7 @@ fn is_valid_id(id: u16) -> Result<(), Whatever> {
 
 #[allow(unused)]
 fn read_config_file(path: &str) -> Result<String, Whatever> {
-    std::fs::read_to_string(path)
-        .with_whatever_context(|_| format!("Could not read file {}", path))
+    std::fs::read_to_string(path).with_whatever_context(|_| format!("Could not read file {}", path))
 }
 
 // #[derive(Debug, Snafu)]

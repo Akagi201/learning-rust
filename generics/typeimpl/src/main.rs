@@ -18,7 +18,7 @@ fn show1<T: std::fmt::Display>(a: T) {
 }
 
 fn main() {
-    let p = Point{x:10, y:20};
+    let p = Point { x: 10, y: 20 };
     println!("{}", &p);
     show(&p);
     show1(&p);

@@ -1,9 +1,9 @@
 #[macro_use(defer)]
 extern crate scopeguard;
 
+use scopeguard::guard;
 use std::fs::File;
 use std::io::Write;
-use scopeguard::guard;
 
 fn f() {
     defer! {

@@ -1,7 +1,7 @@
 fn main() {
     {
         // case 1
-        let x: Vec<i32> = vec!(1i32, 2, 3);
+        let x: Vec<i32> = vec![1i32, 2, 3];
         let y = &x;
         println!("x={:?}, y={:?}", x, y);
     }
@@ -18,7 +18,7 @@ fn main() {
 
     {
         // case 3
-        let x: Vec<i32> = vec!(1i32, 2, 3);
+        let x: Vec<i32> = vec![1i32, 2, 3];
 
         // 可同时有多个不可变借用
         let y = &x;
@@ -32,7 +32,7 @@ fn main() {
     {
         // case 4
         // 源变量 x 可变性
-        let mut x: Vec<i32> = vec!(1i32, 2, 3);
+        let mut x: Vec<i32> = vec![1i32, 2, 3];
 
         // 只能有一个可变借用
         let y = &mut x;
@@ -48,7 +48,7 @@ fn main() {
 
     {
         // case 5
-        let mut x: Vec<i32> = vec!(1i32, 2, 3);
+        let mut x: Vec<i32> = vec![1i32, 2, 3];
 
         // 更新数组
         // push 中对数组进行了可变借用, 并在 push 函数退出时销毁这个借用
@@ -66,7 +66,7 @@ fn main() {
 
             println!("{:?}", z); // 打印: [1, 2, 3, 10, 100, 1000]
         } //y和z在此处被销毁，并释放借用。
-        //访问x正常
+          //访问x正常
         println!("{:?}", x); //打印: [1, 2, 3, 10, 100, 1000]
     }
 }
