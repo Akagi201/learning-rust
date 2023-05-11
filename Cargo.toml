@@ -77,4 +77,5 @@ members = [
     "grpc/prost_message",
     "grpc/prost-live",
     "grpc/tonic-live",
+    "course-rs/for-iter",
 ]
