@@ -56,6 +56,7 @@ members = [
     "thread/join",
     "tokio/echo",
     "tokio/tracing",
+    "tokio/mpsc",
     "trait/animal-interface",
     "unsafe/pointer",
     "variables",
