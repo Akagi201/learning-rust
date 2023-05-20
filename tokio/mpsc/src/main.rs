@@ -1,9 +1,11 @@
 mod global_queue;
+use global_queue::enqueue;
 use global_queue::QUEUE;
 
 #[tokio::main]
 async fn main() {
     // 向全局队列发送消息
+    enqueue(31);
     QUEUE.send(42).unwrap();
     QUEUE.send(10).unwrap();
     QUEUE.send(99).unwrap();
