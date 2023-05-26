@@ -79,4 +79,5 @@ members = [
     "grpc/prost-live",
     "grpc/tonic-live",
     "course-rs/for-iter",
+    "app/student-manager",
 ]
