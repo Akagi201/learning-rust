@@ -36,7 +36,10 @@ impl StudentManagementSystem {
 
     fn print_all_students(&self) {
         for student in &self.students {
-            println!("ID: {}\nName: {}\nAge: {}\nGrade: {}\n", student.id, student.name, student.age, student.grade);
+            println!(
+                "ID: {}\nName: {}\nAge: {}\nGrade: {}\n",
+                student.id, student.name, student.age, student.grade
+            );
         }
     }
 }

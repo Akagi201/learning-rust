@@ -485,6 +485,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10"
 
 [[package]]
+name = "dyn_trait"
+version = "0.1.0"
+
+[[package]]
 name = "echo"
 version = "0.1.0"
 dependencies = [
@@ -1199,6 +1203,10 @@ checksum = "043175f069eda7b85febe4a74abbaeff828d9f8b448515d3151a14a3542811aa"
 dependencies = [
  "autocfg",
 ]
+
+[[package]]
+name = "methods"
+version = "0.1.0"
 
 [[package]]
 name = "mime"

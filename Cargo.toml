@@ -80,4 +80,6 @@ members = [
     "grpc/tonic-live",
     "course-rs/for-iter",
     "app/student-manager",
+    "enum/methods",
+    "trait/dyn_trait",
 ]
