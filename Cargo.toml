@@ -83,4 +83,8 @@ members = [
     "enum/methods",
     "trait/dyn_trait",
     "trait/trait_obj",
+    "macro/declarative_macro",
+    "macro/whoami",
+    "macro/thisisme",
+    "macro/fields_sum",
 ]
