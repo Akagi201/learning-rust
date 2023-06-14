@@ -82,4 +82,5 @@ members = [
     "app/student-manager",
     "enum/methods",
     "trait/dyn_trait",
+    "trait/trait_obj",
 ]
