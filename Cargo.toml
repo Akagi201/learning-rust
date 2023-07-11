@@ -87,4 +87,11 @@ members = [
     "macro/whoami",
     "macro/thisisme",
     "macro/fields_sum",
+    "pointer/boxtrait",
+    "pointer/unsafe-pointer",
+    "pointer/rc",
+    "pointer/cell-ref",
+    "pointer/weak-ref-cycle",
+    "pointer/arc-weak",
+    "pointer/arc-mutex",
 ]

@@ -64,10 +64,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "98161a4e3e2184da77bb14f02184cdd111e83bbbcc9979dfee3c44b9a85f5602"
 
 [[package]]
+name = "arc-mutex"
+version = "0.1.0"
+
+[[package]]
 name = "arc-swap"
 version = "1.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "983cd8b9d4b02a6dc6ffa557262eb5858a27a0038ffffe21a0f133eaa819a164"
+
+[[package]]
+name = "arc-weak"
+version = "0.1.0"
 
 [[package]]
 name = "arc_hello"
@@ -246,6 +254,10 @@ name = "borrowing"
 version = "0.1.0"
 
 [[package]]
+name = "boxtrait"
+version = "0.1.0"
+
+[[package]]
 name = "bumpalo"
 version = "3.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -284,6 +296,10 @@ name = "cc"
 version = "1.0.72"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "22a9137b95ea06864e018375b72adfb7db6e6f68cfc8df5a04d00288050485ee"
+
+[[package]]
+name = "cell-ref"
+version = "0.1.0"
 
 [[package]]
 name = "cfg-if"
@@ -1887,6 +1903,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "rc"
+version = "0.1.0"
+
+[[package]]
 name = "read"
 version = "0.1.0"
 
@@ -3098,6 +3118,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8c1f860d7d29cf02cb2f3f359fd35991af3d30bac52c57d265a3c461074cb4dc"
 
 [[package]]
+name = "unsafe-pointer"
+version = "0.1.0"
+
+[[package]]
 name = "url"
 version = "2.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3224,6 +3248,10 @@ name = "wasm-bindgen-shared"
 version = "0.2.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3d958d035c4438e28c70e4321a2911302f10135ce78a9c7834c0cab4123d06a2"
+
+[[package]]
+name = "weak-ref-cycle"
+version = "0.1.0"
 
 [[package]]
 name = "web-sys"
