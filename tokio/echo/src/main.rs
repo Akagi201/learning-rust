@@ -23,12 +23,9 @@
 
 extern crate tokio;
 
-use tokio::io;
-use tokio::net::TcpListener;
-use tokio::prelude::*;
+use std::{env, net::SocketAddr};
 
-use std::env;
-use std::net::SocketAddr;
+use tokio::{io, net::TcpListener, prelude::*};
 
 fn main() {
     // Allow passing an address to listen on as the first argument of this

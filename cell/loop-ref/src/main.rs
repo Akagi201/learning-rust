@@ -1,6 +1,7 @@
-use std::cell::RefCell;
-use std::rc::Rc;
-use std::rc::Weak;
+use std::{
+    cell::RefCell,
+    rc::{Rc, Weak},
+};
 
 struct Owner {
     name: String,

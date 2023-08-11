@@ -1,14 +1,15 @@
-use crate::pb::chat_server::Chat;
-use crate::pb::*;
-use crate::server::chat_server::ChatServer;
 use core::pin::Pin;
+
 use futures::prelude::*;
 use tokio::sync::{broadcast, mpsc};
 use tokio_stream::wrappers::UnboundedReceiverStream;
-use tonic::Extensions;
-use tonic::Status;
-use tonic::{transport::Server, Request, Response};
+use tonic::{transport::Server, Extensions, Request, Response, Status};
 use tracing::{info, warn};
+
+use crate::{
+    pb::{chat_server::Chat, *},
+    server::chat_server::ChatServer,
+};
 
 const MAX_MESSAGES: usize = 1024;
 
@@ -41,7 +42,7 @@ impl Chat for ChatService {
         self.tx.send(msg).unwrap();
         Ok(Response::new(SendMessageResponse {}))
     }
-    ///Server streaming response type for the GetMessages method.
+    /// Server streaming response type for the GetMessages method.
     type GetMessagesStream = Pin<Box<dyn Stream<Item = Result<ChatMessage, tonic::Status>> + Send>>;
     /// subscribe and get all messages
     async fn get_messages(

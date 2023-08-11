@@ -1,6 +1,6 @@
-use rand::Rng; //trait
-use std::cmp::Ordering;
-use std::io; // prelude
+use std::{cmp::Ordering, io};
+
+use rand::Rng; // trait // prelude
 
 fn main() {
     println!("猜数");

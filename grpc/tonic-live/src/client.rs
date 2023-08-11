@@ -1,13 +1,16 @@
-use crate::client::chat_client::ChatClient;
-use crate::pb::*;
+use std::{ops::Deref, sync::Arc};
+
 use anyhow::Result;
 use arc_swap::ArcSwap;
 use dashmap::DashMap;
 use lazy_static::lazy_static;
-use std::{ops::Deref, sync::Arc};
-use tonic::metadata::AsciiMetadataValue;
-use tonic::{codegen::InterceptedService, service::Interceptor, transport::Channel, Request};
+use tonic::{
+    codegen::InterceptedService, metadata::AsciiMetadataValue, service::Interceptor,
+    transport::Channel, Request,
+};
 use tracing::info;
+
+use crate::{client::chat_client::ChatClient, pb::*};
 
 lazy_static! {
     static ref TOKEN: ArcSwap<Token> = ArcSwap::from(Arc::new(Token {

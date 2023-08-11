@@ -52,8 +52,7 @@ pub struct ChatMessage {
 /// Generated client implementations.
 pub mod chat_client {
     #![allow(unused_variables, dead_code, missing_docs, clippy::let_unit_value)]
-    use tonic::codegen::http::Uri;
-    use tonic::codegen::*;
+    use tonic::codegen::{http::Uri, *};
     #[derive(Debug, Clone)]
     pub struct ChatClient<T> {
         inner: tonic::client::Grpc<T>,
@@ -168,7 +167,7 @@ pub mod chat_client {
 pub mod chat_server {
     #![allow(unused_variables, dead_code, missing_docs, clippy::let_unit_value)]
     use tonic::codegen::*;
-    ///Generated trait containing gRPC methods that should be implemented for use with ChatServer.
+    /// Generated trait containing gRPC methods that should be implemented for use with ChatServer.
     #[async_trait]
     pub trait Chat: Send + Sync + 'static {
         /// login user and get token
@@ -181,7 +180,7 @@ pub mod chat_server {
             &self,
             request: tonic::Request<super::NewChatMessage>,
         ) -> Result<tonic::Response<super::SendMessageResponse>, tonic::Status>;
-        ///Server streaming response type for the GetMessages method.
+        /// Server streaming response type for the GetMessages method.
         type GetMessagesStream: futures_core::Stream<Item = Result<super::ChatMessage, tonic::Status>>
             + Send
             + 'static;

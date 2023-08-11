@@ -1,6 +1,4 @@
-use std::fs::File;
-use std::io::prelude::*;
-use std::path::Path;
+use std::{fs::File, io::prelude::*, path::Path};
 
 fn main() {
     // 创建一个文件路径

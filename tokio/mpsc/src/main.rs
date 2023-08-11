@@ -1,6 +1,5 @@
 mod global_queue;
-use global_queue::enqueue;
-use global_queue::QUEUE;
+use global_queue::{enqueue, QUEUE};
 
 #[tokio::main]
 async fn main() {

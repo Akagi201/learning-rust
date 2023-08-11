@@ -1,5 +1,4 @@
-use std::ops::Deref;
-use std::rc::Rc;
+use std::{ops::Deref, rc::Rc};
 
 // ConsList 每一项包含两个元素：当前项和下一项
 //                           结束项

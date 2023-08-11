@@ -1,7 +1,6 @@
 use std::rc::Rc;
-use tokio::sync::mpsc;
-use tokio::task;
-use tokio::task::yield_now;
+
+use tokio::{sync::mpsc, task, task::yield_now};
 
 async fn say_world() {
     println!("world");

@@ -8,9 +8,7 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ";
 
-use std::fs::File;
-use std::io::prelude::*;
-use std::path::Path;
+use std::{fs::File, io::prelude::*, path::Path};
 
 fn main() {
     let path = Path::new("lorem_ipsum.txt");

@@ -94,4 +94,5 @@ members = [
     "pointer/weak-ref-cycle",
     "pointer/arc-weak",
     "pointer/arc-mutex",
+    "crypto/ssh-ed25519",
 ]

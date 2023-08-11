@@ -1,5 +1,6 @@
-use anyhow::Result;
 use std::env;
+
+use anyhow::Result;
 use tokio::io::{self, AsyncBufReadExt};
 use tonic_live::client::Client;
 
