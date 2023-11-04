@@ -95,4 +95,7 @@ members = [
     "pointer/arc-weak",
     "pointer/arc-mutex",
     "crypto/ssh-ed25519",
+    "pest/csvparser",
 ]
+
+resolver = "2"

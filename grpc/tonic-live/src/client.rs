@@ -99,7 +99,7 @@ impl Interceptor for AuthInterceptor {
     fn call(&mut self, mut req: tonic::Request<()>) -> Result<tonic::Request<()>, tonic::Status> {
         let token = TOKEN.load();
         if token.is_valid() {
-            let value = AsciiMetadataValue::from_str(&format!("Bearer {}", token.data)).unwrap();
+            let value = AsciiMetadataValue::try_from(&format!("Bearer {}", token.data)).unwrap();
             req.metadata_mut().insert("authorization", value);
         }
         Ok(req)

@@ -1,7 +1,8 @@
+#![allow(unused)]
 // import our crate
-use whoami::WhoAmI;
+// use whoami::WhoAmI;
 
-#[derive(WhoAmI)]
+// #[derive(WhoAmI)]
 struct Point {
     x: f64,
     y: f64,

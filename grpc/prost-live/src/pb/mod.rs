@@ -1,8 +1,8 @@
+#![allow(unused)]
 mod person;
 
-pub use person::*;
-
 pub use self::person::person::{PhoneNumber, PhoneType};
+use self::person::Person;
 
 impl Person {
     pub fn new(
