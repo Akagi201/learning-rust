@@ -96,6 +96,7 @@ members = [
     "pointer/arc-mutex",
     "crypto/ssh-ed25519",
     "pest/csvparser",
+    "async/buffered-stream", "async/improved-stream", "async/tokio-stream", "async/tokio-stream1",
 ]
 
 resolver = "2"
