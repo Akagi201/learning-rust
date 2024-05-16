@@ -96,7 +96,13 @@ members = [
     "pointer/arc-mutex",
     "crypto/ssh-ed25519",
     "pest/csvparser",
-    "async/buffered-stream", "async/improved-stream", "async/tokio-stream", "async/tokio-stream1",
+    "async/buffered-stream", 
+    "async/improved-stream",
+    "async/tokio-stream",
+    "async/tokio-stream1",
+]
+exclude = [
+    "json-rpc/jsonrpsee-examples"
 ]
 
 resolver = "2"
