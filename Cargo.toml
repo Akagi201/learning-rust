@@ -99,7 +99,7 @@ members = [
     "async/buffered-stream", 
     "async/improved-stream",
     "async/tokio-stream",
-    "async/tokio-stream1",
+    "async/tokio-stream1", "llvm/jit-sum",
 ]
 exclude = [
     "json-rpc/jsonrpsee-examples"

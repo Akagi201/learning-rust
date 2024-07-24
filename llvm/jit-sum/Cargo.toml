@@ -1,0 +1,7 @@
+[package]
+name = "jit-sum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+inkwell = { git = "https://github.com/TheDan64/inkwell.git", branch = "master", features = ["llvm18-0"] }
